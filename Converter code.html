@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme='light'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <title> Morse Code Converter </title>
+	  <link rel="stylesheet" href="Converter Code.css">
+</head>
+
+<body>
+  <div class="container" >
+      <p> <h1 align="center" id="title"> Converter </h1> </p>
+     <div class="toggle-container">
+         <input type="checkbox" id="switch" name="theme" />
+           <label for="switch">Toggle</label>
+     </div>
+    <div align="center">
+      <p id="p1" class="inputText1"> What is your input? </p> 
+        <input type="texts" placeholder="Your input" id="t1"/> 
+         <form>
+           <select name="optionList" id="optionList">
+             <option value="1">Morse Code</option>
+             <option value="2">Binary</option>
+             <option value="3">Hexadecimal</option>
+           </select>
+         </form>
+         <button id="b1" onclick="convert()"> OK </button>
+          <p id="p2"> </p>
+    </div>
+  </div>
+
+<footer>
+	<div align="center"> 
+		<p class="twitter"> Contact Information:<a href="https://twitter.com/EmTerMkrtchian"  target="_blank"> Twitter Page </a> </p>
+	</div>
+</footer>
+
+<script type="text/javascript" src="Converter Code.js">
+</script>
+
+</body>
+</html>
+
+
+
+

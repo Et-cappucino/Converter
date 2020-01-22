@@ -1,0 +1,135 @@
+html {
+  height: 100%;
+  display: grid;
+
+  --bg: #FCFCFC;
+  --bg-panel: #EBEBEB;
+  --color-headings: #0077FF;
+  --color-text: #333333;
+}
+
+html[data-theme='dark'] {
+  --bg: #333333;
+  --bg-panel: #434343;
+  --color-headings: #3694FF;
+  --color-text: #B5B5B5;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.container {
+  background-color: var(--bg-panel);
+  margin: 3em 10em 3em 10em;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+h1 {
+  margin: 0;
+  color: var(--color-headings);
+}
+
+p {
+  color: var(--color-text);
+  grid-area: content;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  margin-top: 2em;
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: grey;
+  float: right;
+  border-radius: 100px;
+  position: relative;
+  bottom: 145px;
+}
+
+label::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: var(--color-headings);
+}
+
+input:checked + label::after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active::after {
+  width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
+#title {
+  font-family: Georgia;
+  margin: 0;
+  color:var(--color-headings);
+  font-size: 70px;
+}
+
+.inputText1 {
+  margin-top: -60px;
+  margin-bottom: 7px;
+  font-size: 25pt;
+  padding: 20px 15px 10px;
+  width: 310px;
+  font-family: Georgia;
+  color: var(--color-headings);
+}
+
+#b1 {
+  font-size: 20px;
+  margin:10px; 
+  border-radius: 17%;
+}
+
+#t1 {
+  font-size: 25px;
+  margin-bottom: 17px;
+}
+
+#optionList {
+  font-size: 23px;
+  margin-bottom: 3px;
+}
+
+#p2 {
+  font-size: 35px;
+  margin: 20px;
+}
+
+.twitter {
+  padding-top: 90px;
+  font-size: 20px;
+  font-family: Georgia;
+}
